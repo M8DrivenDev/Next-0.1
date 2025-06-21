@@ -1,26 +1,18 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.signup-button {
+  box-shadow: 2px 2px 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 3px 5px;
+  border: solid 1px black;
+  gap: 3px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  align-items: center;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.signup-button:hover {
+  box-shadow: 3px 3px 2px #ee2b69;
+  border: solid 1px #ee2b69;
 }
