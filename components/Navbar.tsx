@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { auth, signIn, signOut } from "@/auth";
-import { FaGithub } from "react-icons/fa";
+import { Github } from "lucide-react";
 
 
 const Navbar = async () => {
@@ -42,7 +42,7 @@ const Navbar = async () => {
                 }}
               >
                 <button type="submit" className="signup-button">
-                  <FaGithub width={20} height={20} size={20}/>
+                  <Github />
                   Github
                 </button>
               </form>
@@ -54,9 +54,9 @@ const Navbar = async () => {
                 }}
               >
                 <button type="submit" className="signup-button">
-                  <Image
+                  <img
                     src={"./google.svg"}
-                    alt="google.svg"
+                    alt="google"
                     width={20}
                     height={20}
                   />
